@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StartCodingNow - Python Basics</title>
+  <link rel="stylesheet" href="basics_python.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" />
+  <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.PNG" alt="StartCodingNow Logo" />
+      <span>StartCodingNow</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="banner-text">Learn Python Basics</div>
+  </div>
+
+  <main class="content">
+    <article class="post-full post">
+      <section class="post-full-content">
+        <p>Welcome to the world of programming with Python! In this guide, you'll learn the foundational concepts of Python programming, from variables and data types to functions and object-oriented programming.</p>
+
+        <h2 id="heading-table-of-contents">Table of Contents</h2>
+        <ul>
+          <li><a href="#heading-introduction">Introduction to Python</a></li>
+          <li><a href="#heading-variables">Variables and Data Types</a></li>
+          <li><a href="#heading-operators">Operators</a></li>
+          <li><a href="#heading-conditions">Conditional Statements</a></li>
+          <li><a href="#heading-loops">Loops</a></li>
+          <li><a href="#heading-functions">Functions</a></li>
+          <li><a href="#heading-classes">Classes and Objects</a></li>
+          <li><a href="#heading-exceptions">Exception Handling</a></li>
+          <li><a href="#heading-modules">Modules and Libraries</a></li>
+        </ul>
+
+        <h2 id="heading-introduction">Introduction to Python</h2>
+        <p>Python is a versatile, high-level programming language known for its simplicity and readability. It's widely used in web development, data analysis, artificial intelligence, and more.</p>
+
+        <h2 id="heading-variables">Variables and Data Types</h2>
+        <p>In Python, variables store data values. Common data types include integers, floats, strings, and booleans:</p>
+        <pre><code class="lang-python">
+x = 5        # Integer
+y = 3.14     # Float
+name = "John" # String
+is_valid = True # Boolean
+        </code></pre>
+
+        <h2 id="heading-operators">Operators</h2>
+        <p>Python supports arithmetic, comparison, logical, and assignment operators:</p>
+        <pre><code class="lang-python">
+result = 10 + 5  # Addition
+is_equal = 10 == 5  # Comparison
+logical_and = True and False  # Logical Operator
+        </code></pre>
+
+        <h2 id="heading-conditions">Conditional Statements</h2>
+        <p>Conditional statements allow you to make decisions in your code:</p>
+        <pre><code class="lang-python">
+if x > 0:
+    print("Positive number")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative number")
+        </code></pre>
+
+        <h2 id="heading-loops">Loops</h2>
+        <p>Loops are used to repeat code until a condition is met:</p>
+        <pre><code class="lang-python">
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+        </code></pre>
+
+        <h2 id="heading-functions">Functions</h2>
+        <p>Functions are blocks of reusable code:</p>
+        <pre><code class="lang-python">
+def greet(name):
+    print(f"Hello, {name}")
+
+greet("Alice")
+        </code></pre>
+
+        <h2 id="heading-classes">Classes and Objects</h2>
+        <p>Python supports object-oriented programming through classes and objects:</p>
+        <pre><code class="lang-python">
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("Alice", 25)
+print(person1.name)
+        </code></pre>
+
+        <h2 id="heading-exceptions">Exception Handling</h2>
+        <p>Handle errors using try-except blocks:</p>
+        <pre><code class="lang-python">
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+        </code></pre>
+
+        <h2 id="heading-modules">Modules and Libraries</h2>
+        <p>Python has numerous built-in and external libraries. Importing a module is easy:</p>
+        <pre><code class="lang-python">
+import math
+print(math.sqrt(16))
+        </code></pre>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Quick Resources</h3>
+        <ul>
+          <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Official Python Tutorial</a></li>
+        </ul>
+      </aside>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StartCodingNow. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
