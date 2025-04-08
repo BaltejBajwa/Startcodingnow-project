@@ -1,0 +1,372 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Header Styles */
+header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 15px 5%; /* Use percentage padding for responsiveness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Makes the header sticky */
+    top: 20px; /* Positioned slightly lower to avoid browser menu bar */
+    left: 0;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.6s ease-in-out; /* Slower and smoother transition */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust this to match the height of the text */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the logo and the text */
+    transition: transform 0.6s ease-in-out; /* Slower and smoother hover effect */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+header .logo span {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #333;
+    transition: color 0.6s ease-in-out; /* Slower and smoother hover effect */
+}
+
+header .logo:hover span {
+    color: #85573b; /* Change color on hover */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced margin for better spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 5px 10px; /* Added padding for better click area */
+    transition: all 0.6s ease-in-out; /* Slower and smoother hover effects */
+}
+
+nav ul li a:hover {
+    color: #85573b; /* Change color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Active Link Style */
+nav ul li a.active {
+    color: #85573b; /* Highlight active page */
+    border-bottom: 2px solid #85573b; /* Underline for active page */
+}
+
+/* Optional: Fade-In Animation for Header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+.section-card {
+    background-color: #f9f5f0;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+  }
+  
+/* Banner Styles */
+.banner {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(340deg, #007BFF, #24c8ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner img {
+    display: none;
+}
+
+.banner-text {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(9, 9, 9);
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* Content Styles */
+.content {
+    margin-top: 20px;
+    max-width: 1000px;
+    padding: 30px 40px;    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-full-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-full-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-full-meta {
+    font-size: 2em;
+    color: #007BFF;
+}
+
+.post-full-content {
+    font-size: 1.3em;
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #000000;
+    
+}
+
+.post-full-content h2 {
+    font-size: 2em;
+    color: #000000;
+    margin-top: 40px; /* Increased margin for better separation */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007BFF; /* Added border for visual separation */
+}
+
+.post-full-content h3 {
+    font-size: 1.5em;
+    color: #AE7D5C;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 30px; /* Increased margin for better separation */
+    margin-bottom: 15px;
+}
+
+.post-full-content p {
+    margin-bottom: 20px; /* Increased margin for better separation */
+    color: #444; /* Slightly darker text for better readability */
+}
+
+.post-full-content ul,
+.post-full-content ol {
+    margin-bottom: 20px; /* Increased margin for better separation */
+    padding-left: 30px; /* Increased padding for better indentation */
+}
+
+.post-full-content li {
+    margin-bottom: 10px;
+    color: #444; /* Slightly darker text for better readability */
+}
+
+
+.post-full-content pre {
+    background-color: #ffffff; /* Light background for the outer container */
+    padding: 10px; /* Padding for the outer container */
+    border-radius: 8px; /* Rounded corners for the outer container */
+    border: 2px solid #ddd; /* Border for the outer container */
+    margin-bottom: 20px; /* Space below the outer container */
+    overflow-x: auto; /* Horizontal scroll for long lines */
+}
+
+.post-full-content code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    font-size: 0.9em; /* Slightly smaller font size */
+    font-weight: 600; /* Bold font for better readability */
+    color: #eb7f38; /* Code text color */
+    display: inline; /* Default to inline */
+    background-color: #f5f5f5; /* Light background for code */
+    padding: 3px 5px; /* Small padding for better appearance */
+    border-radius: 3px; /* Slightly rounded corners */
+    white-space: nowrap; /* Prevent wrapping within the code tag */
+    
+}
+.post-full-content pre code {
+    display: block; /* Ensure <code> behaves as a block element */
+    overflow-x:scroll; /* Horizontal scroll for long lines */
+    background: linear-gradient(10deg, #007BFF, #24c8ff);
+    padding: 10px; /* Padding for the inner box */
+    border-radius: 5px; /* Rounded corners for the inner box */
+    border: 1px solid #ccc; /* Border for the inner box */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    font-size: 0.9em; /* Slightly smaller font size */
+    font-weight: 600; /* Bold font for better readability */
+    color: #ffffff; /* Code text color */
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    
+}
+.post-full-content ol code {
+    display: block; /* Force block display for code inside <ol> */
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    background-color: #f5f5f5; /* Light background for code blocks */
+    padding: 5px 8px; /* Padding for code blocks */
+    border-radius: 5px; /* Rounded corners for code blocks */
+    border: 1px solid #ddd; /* Border for better definition */
+    margin: auto; /* Space above and below the code block */
+    overflow-x: auto; /* Horizontal scroll for long lines */
+}
+.post-full-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold; /* Added bold for better visibility */
+}
+
+.post-full-content a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Table Styles */
+.post-full-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.post-full-content th,
+.post-full-content td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: left;
+}
+
+.post-full-content th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333; /* Darker text for headers */
+}
+
+/* Form Styles */
+.post-full-content form {
+    margin-bottom: 20px;
+}
+
+.post-full-content label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    font-weight: bold;
+    color: #333; /* Darker text for labels */
+}
+
+.post-full-content input[type="text"],
+.post-full-content input[type="email"],
+.post-full-content textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding for better input field size */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em; /* Consistent font size */
+}
+
+.post-full-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Increased padding for better button size */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em; /* Consistent font size */
+}
+
+.post-full-content button:hover {
+    background-color: #0056b3;
+}
+.post-full-content h2, 
+.post-full-content h3 {
+  scroll-margin-top: 120px;
+}
+
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 1rem;
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-of-contents {
+        position: sticky;
+        top: 120px;
+        background: #ffffff;
+        border-left: 3px solid #007BFF;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .banner-text {
+        font-size: 50px;
+    }
+
+    .post-full-title {
+        font-size: 2em;
+    }
+
+    .post-full-content h2 {
+        font-size: 1.8em;
+    }
+
+    .post-full-content h3 {
+        font-size: 1.3em;
+    }
+}

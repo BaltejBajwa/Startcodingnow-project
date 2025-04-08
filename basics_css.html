@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StartCodingNow - CSS Basics</title>
+  <link rel="stylesheet" href="basics_css.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" />
+  <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.PNG" alt="StartCodingNow Logo" />
+      <span>StartCodingNow</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="banner-text">Learn CSS Basics</div>
+  </div>
+
+  <main class="content">
+    <article class="post-full post">
+      <section class="post-full-content">
+        <p>Welcome to the styling world of web development! In this beginner's guide, you will learn the fundamentals of CSS, the language used to style and design web pages.</p>
+        <p>Think of HTML as the structure (the skeleton), and CSS as the style (the clothing and colors). Together, they bring websites to life!</p>
+
+        <h2 id="heading-table-of-contents">Table of Contents</h2>
+        <ul>
+
+          <li><a href="#heading-what-is-css">What is CSS?</a></li>
+          <li><a href="#heading-css-syntax">CSS Syntax</a></li>
+          <li><a href="#heading-types-of-css">Types of CSS</a></li>
+          <li><a href="#heading-selectors">Selectors</a></li>
+          <li><a href="#heading-color-and-background">Color & Background</a></li>
+          <li><a href="#heading-text-and-fonts">Text & Fonts</a></li>
+          <li><a href="#heading-box-model">Box Model</a></li>
+          <li><a href="#heading-positioning-and-display">Positioning & Display</a></li>
+          <li><a href="#heading-flexbox">Flexbox</a></li>
+          <li><a href="#heading-css-grid">CSS Grid</a></li>
+          <li><a href="#heading-media-queries">Media Queries</a></li>
+          <li><a href="#heading-css-units">CSS Units</a></li>
+          <li><a href="#heading-css-variables">CSS Variables</a></li>
+          <li><a href="#heading-css-transitions">CSS Transitions</a></li>
+          <li><a href="#heading-best-practices">Best Practices</a></li>
+        </ul>
+
+        <h2 id="heading-what-is-css">What is CSS?</h2>
+        <p>CSS (Cascading Style Sheets) controls the appearance and layout of HTML elements. It allows you to apply colors, fonts, spacing, and more, making web pages visually appealing.</p>
+
+        <h2 id="heading-css-syntax">CSS Syntax</h2>
+        <p>A CSS rule consists of a selector and a declaration block:</p>
+        <pre><code class="lang-css">
+selector {
+  property: value;
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code class="lang-css">
+p {
+  color: blue;
+  font-size: 16px;
+}
+        </code></pre>
+
+        <h2 id="heading-types-of-css">Types of CSS</h2>
+        <ol>
+          <li><strong>Inline CSS</strong>: Applied directly to an HTML element using the <code>style</code> attribute.</li>
+          <li><strong>Internal CSS</strong>: Written within a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>.</li>
+          <li><strong>External CSS</strong>: Written in a separate CSS file and linked to the HTML file using <code>&lt;link&gt;</code>.</li>
+        </ol>
+
+        <h2 id="heading-selectors">Selectors</h2>
+        <p>Selectors target HTML elements to apply styles. Common types include:</p>
+        <ul>
+          <li>Element Selector (<code>p</code>, <code>h1</code>)</li>
+          <li>Class Selector (<code>.classname</code>)</li>
+          <li>ID Selector (<code>#idname</code>)</li>
+          <li>Universal Selector (<code>*</code>)</li>
+          <li>Group Selector (<code>h1, h2, p</code>)</li>
+          <li>Descendant and Child Selectors</li>
+        </ul>
+
+        <h2 id="heading-color-and-background">Color and Background</h2>
+        <p>Control color and background styles:</p>
+        <pre><code class="lang-css">
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333333;
+  background-image: url('background.png');
+}
+        </code></pre>
+
+        <h2 id="heading-text-and-fonts">Text and Fonts</h2>
+        <p>Customize text appearance with properties like:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>font-family</code></td><td>Sets the font</td></tr>
+            <tr><td><code>font-size</code></td><td>Adjusts text size</td></tr>
+            <tr><td><code>color</code></td><td>Sets text color</td></tr>
+            <tr><td><code>line-height</code></td><td>Controls space between lines</td></tr>
+            <tr><td><code>text-align</code></td><td>Aligns text</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="heading-box-model">Box Model</h2>
+        <p>The box model describes the structure of every HTML element:</p>
+        <ul>
+          <li>Content</li>
+          <li>Padding</li>
+          <li>Border</li>
+          <li>Margin</li>
+        </ul>
+        <pre><code class="lang-css">
+        div {
+        width: 200px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 15px;
+        }
+                </code></pre>
+
+                <h2 id="heading-positioning-and-display">Positioning & Display</h2>
+                <p>Control how elements are placed and displayed:</p>
+                <ul>
+                <li><strong>Position:</strong> static, relative, absolute, fixed, sticky</li>
+                <li><strong>Display:</strong> block, inline, inline-block, none</li>
+                <li><strong>Visibility:</strong> visible, hidden</li>
+                </ul>
+
+                <h2 id="heading-flexbox">Flexbox</h2>
+                <p>Flexbox is used for responsive layouts:</p>
+                <pre><code class="lang-css">
+        .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+                </code></pre>
+
+                <h2 id="heading-css-grid">CSS Grid</h2>
+                <p>CSS Grid provides two-dimensional layout control:</p>
+                <pre><code class="lang-css">
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        }
+                </code></pre>
+
+                <h2 id="heading-media-queries">Media Queries</h2>
+                <p>Media queries enable responsive design:</p>
+                <pre><code class="lang-css">
+        @media (max-width: 768px) {
+        body {
+            background-color: lightblue;
+        }
+        }
+                </code></pre>
+
+                <h2 id="heading-best-practices">Best Practices</h2>
+                <ul>
+                <li>Use external CSS files for maintainability.</li>
+                <li>Keep selectors specific and avoid overuse of IDs.</li>
+                <li>Use shorthand properties.</li>
+                <li>Organize your stylesheet with comments.</li>
+                <li>Minimize unnecessary use of <code>!important</code>.</li>
+                </ul>
+        <!-- Add this after the "Best Practices" section -->
+        <h2 id="heading-css-units">CSS Units</h2>
+        <p>CSS units are used to define sizes, margins, padding, and other properties. Common units include:</p>
+        <ul>
+        <li><strong>Absolute Units:</strong> px (pixels), pt (points), in (inches), cm (centimeters), mm (millimeters)</li>
+        <li><strong>Relative Units:</strong> % (percentage), em (relative to font size), rem (relative to root font size), vw (viewport width), vh (viewport height)</li>
+        </ul>
+        <pre><code class="lang-css">
+        .container {
+        width: 80%; /* Relative unit */
+        padding: 20px; /* Absolute unit */
+        font-size: 1.2rem; /* Relative to root font size */
+        }
+        </code></pre>
+
+        <h2 id="heading-css-variables">CSS Variables</h2>
+        <p>CSS variables (custom properties) allow you to store reusable values, making your stylesheets more maintainable. They are defined using <code>--variable-name</code> and accessed with <code>var()</code>.</p>
+        <pre><code class="lang-css">
+        :root {
+        --primary-color: #85573b;
+        --secondary-color: #ab0a0a;
+        }
+
+        body {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        }
+        </code></pre>
+
+        <h2 id="heading-css-transitions">CSS Transitions</h2>
+        <p>CSS transitions allow you to smoothly change property values over a specified duration. They are commonly used for hover effects and animations.</p>
+        <pre><code class="lang-css">
+        .button {
+        background-color: #85573b;
+        color: white;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+        background-color: #ab0a0a;
+        transform: scale(1.1);
+        }
+</code></pre>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Quick Resources</h3>
+        <ul>
+
+          <li><a href="https://css-tricks.com/snippets/css/" target="_blank">CSS Tricks - Snippets</a></li>
+        </ul>
+      </aside>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StartCodingNow. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

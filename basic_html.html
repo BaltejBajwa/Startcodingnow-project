@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartCodingNow</title>
+  <link rel="stylesheet" href="basic_html.css"> 
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.PNG" alt="StartCodingNow Logo"> 
+      <span>StartCodingNow</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+    <div class="banner">
+        <img src="" alt="Banner Image">
+        <div class="banner-text">HTML Basics</div>
+        <p>HTML for Beginners – HTML Basics With Code Examples</p>
+    </div>
+
+    <div class="content">
+        <article class="post-full post">
+            
+            <section class="post-full-content">
+                <p>Welcome to the exciting world of web development! In this beginner's guide, you will learn the fundamentals of HTML, the backbone of every web page.</p>
+                <p>Imagine a tree: its roots anchor and nourish the entire plant. Similarly, HTML, the root of web development, provides the foundation for every webpage.</p>
+                <p>Understanding HTML's role is like grasping a tree's roots; it forms the fundamental basis for comprehending how web pages come to life.</p>
+                <p>By the end of this tutorial, you'll be equipped with the knowledge to kick-start your coding journey.</p>
+
+                <h2 id="heading-table-of-contents">Table of Contents</h2>
+                <ul>
+                    <li><p><a class="post-section-overview" href="#heading-what-is-html">What is HTML?</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-basic-structure-of-an-html-document">Basic Structure of an HTML Document</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-comments">Comments</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-tags-and-elements">Tags and Elements</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-html-attributes">HTML Attributes</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-html-multimedia">HTML Multimedia</a></p></li>
+                    <li><p><a class="post-section-overview" href="#heading-best-practices">Best Practices</a></p></li>
+                </ul>
+
+                <h2 id="heading-what-is-html">What is HTML?</h2>
+                <p>HTML, which stands for Hypertext Markup Language, is the standard language used for creating and designing the structure of a web page. It allows you to organize content on your website, define its structure, and establish the relationships between different elements.</p>
+
+                <h2 id="heading-basic-structure-of-an-html-document">Basic Structure of an HTML Document</h2>
+                <p>An HTML document follows a specific structure that acts as the foundation for your web page:</p>
+                <pre><code class="lang-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- your web page content goes here --&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                </code></pre>
+                <p>Let's break it down:</p>
+                <p><code>&lt;!DOCTYPE html&gt;</code>: defines the document type and version of HTML being used (HTML5 in this case).</p>
+                <p><code>&lt;html lang="en"&gt;</code> and <code>&lt;/html&gt;</code>: opening and closing tag of the root element that wraps the entire HTML content. The attribute <code>lang="en"</code> defines the language (in this case, USA English).</p>
+                <p><code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code>: opening and closing tag of the <code>head</code> element contains meta-information <code>&lt;meta&gt;</code> about the HTML document, the page title <code>&lt;title&gt;&lt;/title&gt;</code> you see in the browser tab, and link <code>&lt;link /&gt;</code> which defines a link between your HTML document and an external resources, like stylesheet, favicon, import and so on.</p>
+                <p><code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>: opening and closing <code>body</code> tag encloses all the visible content of a web page, including text, images, links, forms, and other elements that users interact with.</p>
+                <p><strong>Note</strong>: All HTML elements have opening (<code>&lt; &gt;</code>) and closing (<code>&lt;/ &gt;</code>) tags, except for self-closing (<code>&lt; &gt;</code> or <code>&lt; /&gt;</code>) tags, which I will explain in more detail later.</p>
+
+                <h2 id="heading-comments">Comments</h2>
+                <p>Notice this <code>&lt;!-- your web page content goes here --&gt;</code> in the above HTML basic structure, it's called comments. Comments are used to add explanatory notes that are not displayed when the web page is viewed in a browser. They are useful for documenting your code, providing information to other developers, or temporarily excluding specific parts of the code. You can create a comment using this tag <code>&lt;!--</code> <code>your comment goes here</code> <code>--&gt;</code>.</p>
+                <p>There are:</p>
+                <ol>
+                    <li><p><strong>Single-line comment</strong>: <code>&lt;!-- This is a single-line comment --&gt;</code></p></li>
+                    <li><p><strong>Multi-line comment</strong>: <code>&lt;!-- This is a multi-line comment. It can span multiple lines.All content within the comment block will be ignored by the browser. --&gt;</code></p></li>
+                </ol>
+
+                <h2 id="heading-tags-and-elements">Tags and Elements</h2>
+                <p>HTML uses tags to define different elements on a webpage. Tags are enclosed in angle brackets (<code>&lt; &gt;</code>). There are opening (<code>&lt;tag&gt;</code>) and closing (<code>&lt;/tag&gt;</code>) tags, and self-closing tags.</p>
+
+                <h3 id="heading-headings">Headings</h3>
+                <pre><code class="lang-html">
+    &lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+    &lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+                </code></pre>
+                <p>The heading tags <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> are used to define headings or subheadings within a document. These tags represent a hierarchy of headings, with <code>&lt;h1&gt;</code> being the highest level (main heading) and <code>&lt;h6&gt;</code> being the lowest level (lowest subheading level).</p>
+                <p>Its purpose is to structure and organize the content of a web page, making it more readable and accessible.</p>
+
+                <h3 id="heading-paragraph">Paragraph</h3>
+                <p>The paragraph tag (<code>&lt;p&gt;</code>) is used to separate blocks of text into distinct paragraphs. It is a block-level element that represents a unit of text or a block of content, and it is commonly used to structure and separate text on a webpage.</p>
+
+                <h3 id="heading-line-breaks">Line Breaks</h3>
+                <p>To create a line break without starting a new paragraph, use the break (<code>&lt;br&gt;</code>) tag.</p>
+                <p>Example 1 - Basic Line Break:</p>
+                <pre><code class="lang-html">
+    &lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;
+                </code></pre>
+                <p>This will render as:</p>
+                <p>This is the first line.<br>This is the second line.</p>
+
+                <h3 id="heading-div">Div</h3>
+                <p>A <code>&lt;div&gt;</code> tag, which stands for "division," is one of the most commonly used container elements in HTML. It is a block-level container that is used to group other HTML elements together and apply styles or scripting to them collectively.</p>
+                <p>Here's an example:</p>
+                <pre><code class="lang-html">
+    &lt;div&gt;
+        &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;List item 1&lt;/li&gt;
+            &lt;li&gt;List item 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+                </code></pre>
+
+                <h3 id="heading-semantic-tags">Semantic Tags</h3>
+                <p>Semantic tags are like special labels that tell web browsers and developers what different parts of a webpage are all about. They help make websites easier to understand for both people and computers.</p>
+                <p>By using these tags, you can make your websites more accessible and easier to find on search engines. Here are some common HTML semantic tags along with examples:</p>
+                <ol>
+                    <li><code>&lt;header&gt;</code>: Represents introductory content at the beginning of a section or webpage.</li>
+                    <li><code>&lt;nav&gt;</code>: Defines navigation links within your webpage.</li>
+                    <li><code>&lt;main&gt;</code>: Defines the main content of a webpage.</li>
+                    <li><code>&lt;section&gt;</code>: Defines sections within a webpage.</li>
+                    <li><code>&lt;article&gt;</code>: Defines an independent piece of content that can stand alone.</li>
+                    <li><code>&lt;aside&gt;</code>: Defines content related to the main content but not part of it.</li>
+                    <li><code>&lt;footer&gt;</code>: Defines the footer of a webpage.</li>
+                </ol>
+
+                <h3 id="heading-list-tag">List Tag</h3>
+                <p>Lists allow you to organize and structure content in a hierarchical manner. There are two types: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists.</p>
+                <p>Example of an ordered list:</p>
+                <pre><code class="lang-html">
+    &lt;ol&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ol&gt;
+                </code></pre>
+                <p>Example of an unordered list:</p>
+                <pre><code class="lang-html">
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+                </code></pre>
+
+                <h3 id="heading-span-tag">Span Tag</h3>
+                <p>The <code>&lt;span&gt;</code> tag is a generic inline container used to group and apply styles to inline elements or text. It is typically used when you want to apply styles or manipulate specific portions of text within a larger block of content.</p>
+                <p>Example:</p>
+                <pre><code class="lang-html">
+    &lt;p&gt;This is a &lt;span style="color: red; font-weight: bold;"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;
+                </code></pre>
+
+                <h3 id="heading-links">Links</h3>
+                <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks or anchor points within a webpage. It is primarily used to define a hyperlink, allowing users to navigate to another webpage, a different section of the same page, or even an external resource.</p>
+                <p>Example:</p>
+                <pre><code class="lang-html">
+    &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                </code></pre>
+
+                <h3 id="heading-form-tag">Form Tag</h3>
+                <p>HTML forms are essential for user interaction on websites. They allow users to input data that can be sent to a server for processing. The basic structure of an HTML form involves several key elements:</p>
+                <pre><code class="lang-html">
+    &lt;form&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" placeholder="Enter your username"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+
+                <h2 id="heading-html-attributes">HTML Attributes</h2>
+                <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and are written as name-value pairs.</p>
+                <p>Example:</p>
+                <pre><code class="lang-html">
+    &lt;img src="image.jpg" alt="Description of the image" width="200" height="150"&gt;
+                </code></pre>
+
+                <h2 id="heading-html-multimedia">HTML Multimedia</h2>
+                <p>You can integrate various types of media content into web pages, such as images, audio, and video.</p>
+                <p>Example of embedding an image:</p>
+                <pre><code class="lang-html">
+    &lt;img src="image.jpg" alt="Description of the image" width="200" height="150"&gt;
+                </code></pre>
+                <p>Example of embedding audio:</p>
+                <pre><code class="lang-html">
+    &lt;audio controls&gt;
+        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+        Your browser may not support the audio element.
+    &lt;/audio&gt;
+                </code></pre>
+                <p>Example of embedding video:</p>
+                <pre><code class="lang-html">
+    &lt;video controls width="640" height="360"&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+        Your browser may not support the video element.
+    &lt;/video&gt;
+                </code></pre>
+
+                <h2 id="heading-best-practices">Best Practices</h2>
+                <ol>
+                    <li>Follow proper HTML document structure.</li>
+                    <li>Use semantic HTML elements.</li>
+                    <li>Comment your code.</li>
+                    <li>Structure your content with proper tags.</li>
+                    <li>Group elements with <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> sparingly.</li>
+                    <li>Do not overuse line breaks (<code>&lt;br&gt;</code>).</li>
+                    <li>Always use alternative text for images.</li>
+                    <li>Optimize forms for user experience.</li>
+                    <li>Ensure compatibility with older browsers.</li>
+                    <li>Stay updated with HTML standards.</li>
+                </ol>
+                <h2 id="heading-html-meta-tags">HTML Meta Tags</h2>
+                <p>Meta tags provide metadata about an HTML document. They are placed inside the <code>&lt;head&gt;</code> section of the document and help improve the functionality of the page in search engines, social media, and browsers.</p>
+                <p>Common meta tags include:</p>
+                <ul>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies the character encoding for the document.</li>
+                    <li><code>&lt;meta name="description" content="Your page description"&gt;</code>: Provides a description of the page for search engines and social sharing platforms.</li>
+                    <li><code>&lt;meta name="keywords" content="HTML, web development, coding"&gt;</code>: Specifies keywords relevant to the page for search engine optimization (SEO).</li>
+                    <li><code>&lt;meta name="author" content="Your Name"&gt;</code>: Indicates the author of the webpage.</li>
+                    <li><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>: Ensures the page is displayed correctly on Internet Explorer.</li>
+                </ul>
+            
+                <h2 id="heading-forms-and-inputs">Forms and Input Elements</h2>
+                <p>HTML forms allow users to input data that can be sent to the server. A form usually contains various types of <code>&lt;input&gt;</code> elements such as text fields, buttons, and checkboxes.</p>
+                <p>The most common form elements include:</p>
+                <ul>
+                    <li><code>&lt;input type="text"&gt;</code>: Used for single-line text input fields.</li>
+                    <li><code>&lt;input type="password"&gt;</code>: Used for password fields.</li>
+                    <li><code>&lt;input type="email"&gt;</code>: Used for input fields that require an email address.</li>
+                    <li><code>&lt;textarea&gt;</code>: Used for multi-line text input.</li>
+                    <li><code>&lt;button&gt;</code>: Used for clickable buttons that submit forms.</li>
+                    <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code>: Used to create dropdown lists.</li>
+                </ul>
+                <p>Here’s an example of a form with various input types:</p>
+                <pre><code class="lang-html">
+    &lt;form action="submit_form.php" method="POST"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Your name"&gt;
+            
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Your email"&gt;
+            
+        &lt;label for="message"&gt;Message:&lt;/label&gt;
+        &lt;textarea id="message" name="message" placeholder="Your message"&gt;&lt;/textarea&gt;
+            
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+            
+                <h2 id="heading-html-table">HTML Tables</h2>
+                <p>HTML tables are used to represent data in a tabular format, consisting of rows and columns. A table is created using the <code>&lt;table&gt;</code> element, and rows are created with the <code>&lt;tr&gt;</code> element. Cells within the rows are created using <code>&lt;td&gt;</code> for data cells and <code>&lt;th&gt;</code> for header cells.</p>
+                <p>Here’s an example of a simple HTML table:</p>
+                <pre><code class="lang-html">
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John Doe&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jane Smith&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+                </code></pre>
+                <p>Attributes you can use with tables:</p>
+                <ul>
+                    <li><code>border</code>: Adds a border around the table.</li>
+                    <li><code>cellspacing</code>: Defines space between cells.</li>
+                    <li><code>cellpadding</code>: Defines space within cells.</li>
+                </ul>
+            
+                <h2 id="heading-html-forms">Form Elements and Their Attributes</h2>
+                <p>HTML forms are essential for getting user input. They can contain several different types of form controls such as text fields, buttons, checkboxes, radio buttons, and more. Here’s a breakdown of some commonly used form controls and their attributes:</p>
+                <h3 id="heading-radio-checkbox">Radio Buttons and Checkboxes</h3>
+                <p>Radio buttons allow a user to select only one option from a set, while checkboxes allow users to select multiple options. Both elements are used with the <code>&lt;input&gt;</code> tag.</p>
+                <pre><code class="lang-html">
+    &lt;form&gt;
+        &lt;label&gt;Do you like HTML?&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="yes" name="html" value="yes"&gt; Yes&lt;br&gt;
+        &lt;input type="radio" id="no" name="html" value="no"&gt; No&lt;br&gt;
+            
+        &lt;label&gt;Choose your favorite colors:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="red" name="colors" value="red"&gt; Red&lt;br&gt;
+        &lt;input type="checkbox" id="green" name="colors" value="green"&gt; Green&lt;br&gt;
+        &lt;input type="checkbox" id="blue" name="colors" value="blue"&gt; Blue&lt;br&gt;
+    &lt;/form&gt;
+                </code></pre>
+            
+                <h2 id="heading-advanced-html">Advanced HTML Elements</h2>
+                <p>Once you’re comfortable with the basics of HTML, there are a variety of advanced elements you can use to enhance your webpages:</p>
+                <h3 id="heading-iframe">IFrames</h3>
+                <p>An <code>&lt;iframe&gt;</code> (inline frame) is used to embed another document within the current document. This is typically used for embedding external content such as videos, maps, or other websites.</p>
+                <pre><code class="lang-html">
+    &lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;
+                </code></pre>
+            
+                <h3 id="heading-embed">Embedding Other Media</h3>
+                <p>You can embed external media, such as audio or video, directly within your page using the <code>&lt;embed&gt;</code> tag. This is particularly useful for embedding Flash or other plugin-based content.</p>
+                <pre><code class="lang-html">
+    &lt;embed src="flash_video.swf" width="600" height="400"&gt;
+                </code></pre>
+            
+                <h3 id="heading-custom-styling">Custom Styling with Classes and IDs</h3>
+                <p>Using the <code>class</code> and <code>id</code> attributes, you can add custom styles to specific elements on your webpage. <code>class</code> is used for styling multiple elements, while <code>id</code> is used to uniquely identify a single element.</p>
+                <pre><code class="lang-html">
+    &lt;div class="custom-style"&gt;
+        &lt;p&gt;This is a paragraph with custom styling.&lt;/p&gt;
+    &lt;/div&gt;
+            
+    &lt;div id="unique-element"&gt;
+        &lt;p&gt;This is a uniquely identified element.&lt;/p&gt;
+    &lt;/div&gt;
+                </code></pre>
+            
+                <h2 id="heading-html-forms-best-practices">Best Practices for HTML Forms</h2>
+                <p>Here are some tips for creating user-friendly forms:</p>
+                <ul>
+                    <li>Always include clear labels for each form field.</li>
+                    <li>Group related fields together to make the form more organized.</li>
+                    <li>Use placeholder text to provide examples or hints inside input fields.</li>
+                    <li>Validate form inputs before submission to avoid errors.</li>
+                    <li>Ensure forms are accessible by adding <code>aria-label</code> attributes for screen readers.</li>
+                    <li>Provide feedback to the user once the form is submitted successfully or if errors occur.</li>
+                </ul>
+            
+                <h2 id="heading-html-viewport">Viewport and Responsive Web Design</h2>
+                <p>Responsive web design ensures that a webpage looks good on all devices, from desktops to smartphones. You can make a webpage responsive by using the <code>&lt;meta name="viewport"&gt;</code> tag in the <code>&lt;head&gt;</code> section. The viewport meta tag controls the layout on mobile browsers, ensuring your content scales correctly on smaller screens.</p>
+                <pre><code class="lang-html">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </code></pre>
+            
+                <h2 id="heading-html-iframe">Embedding External Content (iFrames)</h2>
+                <p>iFrames are used to embed other web content (such as videos, external web pages, or maps) inside your webpage.</p>
+                <pre><code class="lang-html">
+    &lt;iframe src="https://www.youtube.com/embed/example" width="560" height="315"&gt;&lt;/iframe&gt;
+                </code></pre>
+            
+                <h2 id="heading-html-text-formatting">HTML Text Formatting</h2>
+                <p>HTML provides several elements for formatting text:</p>
+                <ul>
+                    <li><code>&lt;b&gt;</code>: Defines bold text.</li>
+                    <li><code>&lt;i&gt;</code>: Defines italicized text.</li>
+                    <li><code>&lt;u&gt;</code>: Defines underlined text.</li>
+                    <li><code>&lt;small&gt;</code>: Defines smaller text.</li>
+                    <li><code>&lt;mark&gt;</code>: Highlights text.</li>
+                    <li><code>&lt;del&gt;</code>: Defines deleted (struck-through) text.</li>
+                    <li><code>&lt;ins&gt;</code>: Defines inserted text (underlined).</li>
+                </ul>
+            
+                <h2 id="heading-html-comments-best-practices">Best Practices for Comments</h2>
+                <p>HTML comments are important for code clarity, but they should be used sparingly and never for leaving TODOs or non-descriptive notes.</p>
+                <ul>
+                    <li>Always write comments to explain sections of code that might be complex or non-obvious.</li>
+                    <li>Avoid cluttering your code with too many comments.</li>
+                    <li>Remove commented-out code before deploying to production.</li>
+                </ul>
+            
+                <h2 id="heading-html-forms-validation">Form Validation</h2>
+                <p>To ensure user inputs are correct, HTML5 provides several form validation attributes such as <code>required</code>, <code>pattern</code>, <code>minlength</code>, <code>maxlength</code>, etc. These attributes allow you to perform client-side validation before form submission.</p>
+                <p>Example:</p>
+                <pre><code class="lang-html">
+    &lt;form&gt;
+        &lt;input type="email" name="email" required&gt;
+        &lt;input type="text" name="name" minlength="3" required&gt;
+    &lt;/form&gt;
+                </code></pre>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StartCodingNow. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
