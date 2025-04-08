@@ -1,0 +1,289 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Header Styles */
+header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 15px 5%; /* Use percentage padding for responsiveness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Makes the header sticky */
+    top: 20px; /* Positioned slightly lower to avoid browser menu bar */
+    left: 0;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.6s ease-in-out; /* Slower and smoother transition */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust this to match the height of the text */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the logo and the text */
+    transition: transform 0.6s ease-in-out; /* Slower and smoother hover effect */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+header .logo span {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #333;
+    transition: color 0.6s ease-in-out; /* Slower and smoother hover effect */
+}
+
+header .logo:hover span {
+    color: #85573b; /* Change color on hover */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced margin for better spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 5px 10px; /* Added padding for better click area */
+    transition: all 0.6s ease-in-out; /* Slower and smoother hover effects */
+}
+
+nav ul li a:hover {
+    color: #85573b; /* Change color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Active Link Style */
+nav ul li a.active {
+    color: #85573b; /* Highlight active page */
+    border-bottom: 2px solid #85573b; /* Underline for active page */
+}
+
+/* Optional: Fade-In Animation for Header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+    
+  /* Hero Section */
+  .contact-hero {
+    margin-top: 100px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 60px 20px;
+  }
+    
+  .contact-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+    
+  .contact-hero p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+    
+  /* Contact Info */
+  .contact-info {
+    background-color: #fff9f6;
+    padding: 50px 20px;
+    text-align: center;
+  }
+    
+  .contact-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+    
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+    
+  .contact-info ul li {
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  .contact-info ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  /* Hero Section for Contact Page */
+.contact-hero {
+    margin-top: 100px;
+    background-color: #85573b;
+    padding: 60px 20px;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Makes it responsive */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+    
+  /* CTA Buttons */
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+    
+  .cta-button {
+    background-color: #85573b;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Smooch Sans', sans-serif;
+
+  }
+    
+  .cta-button:hover {
+    background-color: #a87c5f;
+  }
+    
+  /* Footer */
+  footer {
+    background-color: #f2ecdf;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+    
+  footer p {
+    margin: 0;
+    font-size: 1em;
+  }
+    
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+    
+  .modal-content {
+    background-color: #a56236;
+    color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+  }
+    
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+    
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
+  /* Form */
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px
+  }

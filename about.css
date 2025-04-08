@@ -1,0 +1,256 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Smooch Sans', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.logo:hover img {
+  transform: scale(1.1);
+}
+
+header .logo span {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #333;
+  transition: color 0.6s ease-in-out;
+}
+
+header .logo:hover span {
+  color: #85573b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding: 5px 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #85573b;
+  transform: translateY(-2px);
+}
+
+nav ul li a.active {
+  color: #85573b;
+  border-bottom: 2px solid #85573b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header { animation: fadeIn 1s ease-in-out; }
+
+/* Section Titles */
+.section-title, .team h2, .cta h2 {
+  font-size: 2.5em;
+  color: #85573b;
+  margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #fff9f6;
+  padding: 60px 20px 30px; /* reduce top padding */
+  text-align: center;
+  margin-top: 80px; /* bring hero closer to header */
+  border-top: 5px solid #85573b;
+}
+.hero {
+  border-bottom: 2px solid #f2ecdf;
+}
+.hero-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 3.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Our Story */
+.our-story {
+  background: linear-gradient(180deg, #603813, #85573b);
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+.our-story h2 {
+  color: #e0a279;
+  font-size: 3em;
+  }
+
+.our-story p, .our-story ul {
+  font-size: 1.5em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.our-story ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.our-story ul li {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+}
+
+/* Team Section */
+.team {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.team-member {
+  width: 220px;
+  background-color: #f9f5f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #777;
+}
+
+/* CTA */
+.cta {
+  background-color: #f2ecdf;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.cta-button {
+  background-color: #85573b;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a87c5f;
+}
+
+/* Footer */
+footer {
+  background-color: #f2ecdf;
+  color: #AE7D5C;
+  padding: 50px 20px;
+  font-family: 'Smooch Sans', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #000000;
+}
